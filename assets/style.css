@@ -1,0 +1,87 @@
+.deluus{
+    display:flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.deluus > * {
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+}
+
+.header{
+    background-image: url(../ex12.jpg);
+    display:flex;
+    justify-content: space-between;
+    /* background: tomato; */
+    height: 100px;
+    padding:15px;
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    color:black;
+    min-width:400px;
+    margin-right:3em
+    
+    
+  }  
+nav a{
+    font-weight: bolder;
+    text-decoration: underline;
+   
+}
+
+
+.footer {
+    background:lightgreen;
+    height: 80px;
+    flex-shrink: 0;
+}
+.contact{
+    display:flex;
+    justify-content: space-between;
+}
+.main{
+    text-align: left;
+    background: deepskyblue;
+    height: 120px;
+    font-size:24px;
+}
+.aside1{
+    background: gold;
+}
+.aside2{
+    background: hotpink;
+}
+/* setting the order of items to sit when the screen shrinks */
+@media all and (min-width:800px){
+    /* main -blue container */
+    .main{
+        flex: 3;
+    }
+    /* aside1-yellow container */
+    .aside1 {
+        order: 1;
+
+        /* aside2-pink container */
+    }
+    .aside2{
+        order: 2;
+    }
+    .main{
+        order: 2;
+    }
+    /* footer- lime green container */
+    .footer {
+        order: 4;
+    }
+}
+@media all and (min-width: 600px){
+    .aside {
+        flex: 1;
+    }
+}

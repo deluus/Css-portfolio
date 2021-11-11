@@ -2,8 +2,9 @@
     display:flex;
     flex-flow: row wrap;
     text-align: center;
+    
 }
-.deluus > * {
+ .deluus > * {
     padding: 10px;
     margin: 10px;
     flex: 1 100%;
@@ -11,13 +12,42 @@
 }
 
 .header{
-    background-image: url(../ex12.jpg);
+    
     display:flex;
     justify-content: space-between;
-    /* background: tomato; */
-    height: 100px;
-    padding:15px;
+    background: tomato; 
+    height: fit-content;
+    padding:20px;
+    margin-bottom: 10px;
     
+}
+
+.header-title{
+    background-color: plum !important;
+    padding: 10px;
+    
+}
+
+.image{
+      background-image: url(../river.jpg);
+      height: 300px;
+      padding: 100px;
+      margin:10px; 
+      background-repeat:no-repeat;
+      background-size: cover;
+      background-position: center;
+
+}
+.image p{
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    color:black;
+    margin-top: 100px;
+    background-color: plum;
+    font-size: 50px;
+    width: fit-content;
+
 }
 
 nav ul{
@@ -25,8 +55,6 @@ nav ul{
     justify-content: space-between;
     color:black;
     min-width:400px;
-    margin-right:3em
-    
     
   }  
 nav a{
@@ -36,27 +64,136 @@ nav a{
 }
 
 
-.footer {
-    background:lightgreen;
+.footer-container {
+  background-color: chartreuse;
     height: 80px;
     flex-shrink: 0;
-}
-.contact{
-    display:flex;
+    width: 99%;
+    padding-left: 20px;
+    
+   
+ }
+ .contact-container{
+    display: flex;
     justify-content: space-between;
-}
-.main{
     text-align: left;
+    
+
+  
+   
+}
+.contact-container h1{
+    color:orangered;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: 1%;
+    justify-content: space-between;
+   
+}
+.info a{
+    color: orangered;
+   display:flex;
+   justify-content: space-between;
+   margin-right:3em;
+   margin: 5% 5em 2% 0;
+   text-decoration: underline;
+
+}
+
+
+
+section {
+    margin: 25px 25px;
+}
+
+.titles {
+    margin: auto auto;
+    float: left;
+    width: 20%;
+}
+
+.titles h1 {
+    font-size: 30px;
+}
+
+.about-me-paragraph {
+    margin: auto 10%;
+}
+
+.about-me {
+    display: inline-flex;
     background: deepskyblue;
     height: 120px;
     font-size:24px;
 }
-.aside1{
-    background: gold;
+
+.work-container {
+    text-align: left;
+    display: inline-flex;
+    flex-direction: row;
+    width: 97%;
+    background: plum;
+    height: fit-content;
+    padding: 20px 20px;
 }
+
+.work-items {
+    margin: 0 auto;
+    display: inline-block;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.row-1 {
+    margin: 0 25% !important;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.row-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.work-items div {
+    margin: 20px 20px;
+}
+
+.work-item-1 {
+    height: 400px;
+    width: 600px;
+    background-color: black;
+}
+
+.work-item-2 {
+    height: 200px;
+    width: 300px;
+    background-color: black;
+}
+.work-item-3 {
+    height: 200px;
+    width: 300px;
+    background-color: black;
+}
+.work-item-4 {
+    height: 200px;
+    width: 300px;
+    background-color: black;
+}
+
+.work-item-5 {
+    height: 200px;
+    width: 300px;
+    background-color: black;
+}
+/* 
 .aside2{
     background: hotpink;
-}
+} */
+/* .aside3{
+    background: plum;
+} */
 /* setting the order of items to sit when the screen shrinks */
 @media all and (min-width:800px){
     /* main -blue container */
@@ -72,6 +209,9 @@ nav a{
     .aside2{
         order: 2;
     }
+    /* .aside3{
+        order:3;
+    } */
     .main{
         order: 2;
     }

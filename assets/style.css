@@ -2,6 +2,7 @@
     display:flex;
     flex-flow: row wrap;
     text-align: center;
+    justify-content:space-between;
     
 }
  .deluus > * {
@@ -11,14 +12,13 @@
     border-radius: 10px;
 }
 
-.header{
-    
+.header {  
     display:flex;
     justify-content: space-between;
     background: tomato; 
     height: fit-content;
     padding:20px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     
 }
 
@@ -28,8 +28,9 @@
     
 }
 
-.image{
-      background-image: url(../river.jpg);
+
+.image {
+      background-image: url(../belau4.jpg);
       height: 300px;
       padding: 100px;
       margin:10px; 
@@ -38,103 +39,93 @@
       background-position: center;
 
 }
-.image p{
+.image p {
     float: right;
     display: flex;
     justify-content: flex-end;
     color:black;
     margin-top: 100px;
-    background-color: plum;
-    font-size: 50px;
+    /* background-color:lightskyblue; */
+    font-size: 30px;
     width: fit-content;
 
 }
 
-nav ul{
+nav ul {
     display: flex;
     justify-content: space-between;
     color:black;
     min-width:400px;
     
   }  
-nav a{
+nav a {
     font-weight: bolder;
     text-decoration: underline;
-   
-}
-
-
-.footer-container {
-  background-color: chartreuse;
-    height: 80px;
-    flex-shrink: 0;
-    width: 99%;
-    padding-left: 20px;
-    
-   
- }
- .contact-container{
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-    
-
-  
-   
-}
-.contact-container h1{
-    color:orangered;
-    font-size: 30px;
-    margin-left: 30px;
-    margin-top: 1%;
-    justify-content: space-between;
-   
-}
-.info a{
-    color: orangered;
-   display:flex;
-   justify-content: space-between;
-   margin-right:3em;
-   margin: 5% 5em 2% 0;
-   text-decoration: underline;
 
 }
-
-
-
+/*  spacing that seperates the paragraphs/sections and the sides */
 section {
-    margin: 25px 25px;
+    margin: 5px 10px;
 }
 
 .titles {
-    margin: auto auto;
+    /* margin: auto auto; */
     float: left;
     width: 20%;
 }
 
-.titles h1 {
+.titles-background-1 {
+    /* margin-top: 10px; */
+    background-color: orange;
+   
+    border-right: solid;
+    border-right-width: 5px;
+    padding-top: 50px;
+    padding-bottom: 120px;
+    padding-right: 145px; 
+}
+.titles-container h1{
     font-size: 30px;
+    display: flex;
+    /* background-color: red; */
+    border:solid;
+}
+
+.about-me-container {
+    display: inline-flex;
+    background: deepskyblue;
+    height: 200px;
+    font-size:24px;
+ 
 }
 
 .about-me-paragraph {
-    margin: auto 10%;
-}
-
-.about-me {
-    display: inline-flex;
-    background: deepskyblue;
-    height: 120px;
-    font-size:24px;
+    margin:auto;
 }
 
 .work-container {
-    text-align: left;
-    display: inline-flex;
+    display:flex;
     flex-direction: row;
-    width: 97%;
+    /* width: 97%; */
     background: plum;
     height: fit-content;
-    padding: 20px 20px;
+   
+    /* padding: 20px 20px; */
+ 
+}
+.titles-background-2{
+    background-color:skyblue;
+    border-right: solid;
+    border-right-width: 5px; 
+    padding-bottom: 1120px;
+    padding-right: 161px;
+} 
+.titles-container h2{
+    font-size: 30px;
+    display: flex;
+    background-color:orangered;
+
+    
 }
 
 .work-items {
@@ -163,65 +154,130 @@ section {
 .work-item-1 {
     height: 400px;
     width: 600px;
-    background-color: black;
+    /* background-color: black; */
+    background-image: url(../Belau.jpg);
+    background-size: cover;
+}
+.picture-box{
+    display: flex;
+    
+   
 }
 
 .work-item-2 {
-    height: 200px;
+    height: 300px;
     width: 300px;
-    background-color: black;
+    /* background-color: black; */
+    background-image: url(../I.jpg);
+    background-size: cover;
+   
+}
+.picture-box-2{
+    display:flex;
 }
 .work-item-3 {
-    height: 200px;
+    height: 300px;
     width: 300px;
-    background-color: black;
+    /* background-color: black; */
+    background-image: url(../daob2.jpg);
+    background-size: cover;
+    
+}
+.picture-box-3{
+    display: flex;
 }
 .work-item-4 {
-    height: 200px;
+    height: 300px;
     width: 300px;
-    background-color: black;
+    /* background-color: black; */
+    background-image: url(../demul2.jpg);
+    background-size: cover;
+    background-position: center center;
+
+}
+.picture-box-4{
+    display: flex;
 }
 
 .work-item-5 {
-    height: 200px;
+    height: 300px;
     width: 300px;
-    background-color: black;
+    /* background-color: black; */
+    background-image: url(../kedam2.jpg);
+    background-size: cover;
 }
-/* 
-.aside2{
-    background: hotpink;
-} */
-/* .aside3{
-    background: plum;
-} */
+.picture-box-5{
+    display: flex;
+    color: white;
+}
+
+/* .footer-container {
+    background-color:wheat;
+      height: 80px;
+      flex-shrink: 0;
+      width: 99%;
+      padding-left: 128px;
+      
+     
+   } */
+   .contact-container{
+      display: flex;
+      background-color: wheat;
+      justify-content: space-between;
+      text-align: center;
+      flex-direction: row;
+   
+   }
+  
+  .titles-background-3{
+      display: flex;
+      /* font-size: 20px; */
+      background-color: orange;
+      border-right: solid;
+      border-right-width: 5px;
+      padding-top: 20px;
+      padding-right: 128px;
+      padding-bottom: 40px;
+  }
+  .titles-container h3{
+      font-size: 20px;
+      background-color: red;
+  }
+
+  .info a {
+    color: black;
+   display:flex;
+   justify-content: space-around;
+   font-size: 20px;
+   margin-right:3em;
+   margin: 5% 5em 2% 0;
+   text-decoration: underline;
+  }
+
+  
+
 /* setting the order of items to sit when the screen shrinks */
-@media all and (min-width:800px){
-    /* main -blue container */
-    .main{
+@media all and (min-width:300px){
+   
+    .about-me-container{
         flex: 3;
     }
-    /* aside1-yellow container */
-    .aside1 {
+ 
+    .about-me-container{
         order: 1;
+    } 
 
-        /* aside2-pink container */
-    }
-    .aside2{
+    .work-container {
         order: 2;
     }
-    /* .aside3{
-        order:3;
-    } */
-    .main{
-        order: 2;
+
+    .footer-container{
+        order: 3;
     }
-    /* footer- lime green container */
-    .footer {
-        order: 4;
-    }
-}
-@media all and (min-width: 600px){
-    .aside {
+
+   
+
+@media all and (min-width:100px){
+    .flex-container{
         flex: 1;
     }
-}

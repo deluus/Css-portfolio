@@ -1,21 +1,30 @@
+*{
+    padding:0;
+    box-sizing: border-box;
+}
 .deluus{
+    
+    background: black;
+
+}
+    
+/* everything under deluus in the html */
+ .deluus > * {
     display:flex;
     flex-flow: row wrap;
     text-align: center;
     justify-content:space-between;
-    
-}
- .deluus > * {
     padding: 10px;
-    margin: 10px;
+    margin: 20px; 
     flex: 1 100%;
     border-radius: 10px;
-}
+    }
 
+/*  title page */
 .header {  
     display:flex;
     justify-content: space-between;
-    background: tomato; 
+    background:rgb(192, 228, 242); 
     height: fit-content;
     padding:20px;
     margin-bottom: 0px;
@@ -23,27 +32,30 @@
 }
 
 .header-title{
-    background-color: plum !important;
-    padding: 10px;
+    font-size: 20px;
+    font-style: italic;
+    /* background-color: plum !important; */
+    padding: 2px;
     
 }
 
 
 .image {
-      background-image: url(../belau4.jpg);
-      height: 300px;
-      padding: 100px;
+      background-image: url(../psychedelic.jpg);
+      height: 400px;
+      padding: 200px;
       margin:10px; 
       background-repeat:no-repeat;
       background-size: cover;
       background-position: center;
 
 }
+/*  use your illusion */
 .image p {
     float: right;
     display: flex;
     justify-content: flex-end;
-    color:black;
+    color:pink;
     margin-top: 100px;
     /* background-color:lightskyblue; */
     font-size: 30px;
@@ -51,6 +63,8 @@
 
 }
 
+
+/* links / nav bar */
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -63,10 +77,19 @@ nav a {
     text-decoration: underline;
 
 }
+
 /*  spacing that seperates the paragraphs/sections and the sides */
 section {
-    margin: 5px 10px;
+    margin: 0px 10px 0px -20px;
+ 
 }
+.flex-container{
+    position: relative;
+    margin-right: -10px;
+    margin-left: 10;
+    border-radius:5px;
+}
+
 
 .titles {
     /* margin: auto auto; */
@@ -74,31 +97,38 @@ section {
     width: 20%;
 }
 
+/*  background settings for container with h1 */
 .titles-background-1 {
     /* margin-top: 10px; */
-    background-color: orange;
-   
-    border-right: solid;
-    border-right-width: 5px;
+    background-color: skyblue;
+     border-right: solid;
+    border-right-width: 5px; 
     padding-top: 50px;
     padding-bottom: 120px;
     padding-right: 145px; 
 }
+
+/*  H1 settings */
 .titles-container h1{
     font-size: 30px;
-    display: flex;
-    /* background-color: red; */
+    display: flex; 
+    flex-grow: 1;
+    /* justify-content: right; */
+    background-color: red; 
     border:solid;
+
+  
 }
 
+/*  settings for paragraph container */
 .about-me-container {
     display: inline-flex;
-    background: deepskyblue;
+    background: rgb(114, 150, 150);
     height: 200px;
     font-size:24px;
  
 }
-
+/* settings for pargraph itself */
 .about-me-paragraph {
     margin:auto;
 }
@@ -106,26 +136,27 @@ section {
 .work-container {
     display:flex;
     flex-direction: row;
-    /* width: 97%; */
-    background: plum;
-    height: fit-content;
+    /* width: 100%; */
+    background: rgb(114, 150, 150);
+    /* height: fit-content; */
    
     /* padding: 20px 20px; */
  
 }
 .titles-background-2{
     background-color:skyblue;
+    flex-grow: 1;
     border-right: solid;
     border-right-width: 5px; 
     padding-bottom: 1120px;
     padding-right: 161px;
+   
 } 
 .titles-container h2{
     font-size: 30px;
-    display: flex;
-    background-color:orangered;
 
-    
+    background-color:orangered;
+    border:solid;
 }
 
 .work-items {
@@ -152,17 +183,40 @@ section {
 }
 
 .work-item-1 {
-    height: 400px;
-    width: 600px;
+    height: 300px;
+    width: 500px;
+    flex-grow: 4;
     /* background-color: black; */
     background-image: url(../Belau.jpg);
     background-size: cover;
+    /* border: solid 5px; */
+
 }
 .picture-box{
-    display: flex;
+    display: inline-flex;
+    /* border:dashed; */
+    background-color: transparent;
     
    
 }
+.inside-box{
+    color: white;
+    font-size: 30px;
+}
+
+.picture-box-2{
+    display: inline-flex;
+    flex-grow: 4;
+    color:black;
+    /* border: dashed; */
+    background-color: transparent;
+}
+.inside-box-2{
+    color: black;
+    flex-grow: 4;
+    font-size: 20px;
+}
+
 
 .work-item-2 {
     height: 300px;
@@ -170,22 +224,20 @@ section {
     /* background-color: black; */
     background-image: url(../I.jpg);
     background-size: cover;
-   
+    flex-grow: 4;
+
 }
-.picture-box-2{
-    display:flex;
-}
+
 .work-item-3 {
     height: 300px;
     width: 300px;
     /* background-color: black; */
     background-image: url(../daob2.jpg);
     background-size: cover;
+    flex-grow: 4;
     
 }
-.picture-box-3{
-    display: flex;
-}
+
 .work-item-4 {
     height: 300px;
     width: 300px;
@@ -193,11 +245,10 @@ section {
     background-image: url(../demul2.jpg);
     background-size: cover;
     background-position: center center;
+    flex-grow: 4;
 
 }
-.picture-box-4{
-    display: flex;
-}
+
 
 .work-item-5 {
     height: 300px;
@@ -205,11 +256,9 @@ section {
     /* background-color: black; */
     background-image: url(../kedam2.jpg);
     background-size: cover;
+    flex-grow: 4;
 }
-.picture-box-5{
-    display: flex;
-    color: white;
-}
+
 
 /* .footer-container {
     background-color:wheat;
@@ -222,7 +271,7 @@ section {
    } */
    .contact-container{
       display: flex;
-      background-color: wheat;
+      background: rgb(114, 150, 150);
       justify-content: space-between;
       text-align: center;
       flex-direction: row;
@@ -231,8 +280,9 @@ section {
   
   .titles-background-3{
       display: flex;
+      flex-grow: 1;
       /* font-size: 20px; */
-      background-color: orange;
+      background-color:skyblue;
       border-right: solid;
       border-right-width: 5px;
       padding-top: 20px;
@@ -243,22 +293,35 @@ section {
       font-size: 20px;
       background-color: red;
   }
+  
+  .footer-container{
+      text-align: center;
+      flex-grow: 4;
+  }
 
   .info a {
-    color: black;
+   color: black;
    display:flex;
-   justify-content: space-around;
+   flex-grow: 4;
+   /* justify-content: space-around; */
    font-size: 20px;
    margin-right:3em;
    margin: 5% 5em 2% 0;
    text-decoration: underline;
   }
+/* 
+@media screen and (max-width:768px) {
+    body,
+    .flex-container {
+     flex-direction: column;
+    } */
+
 
   
 
 /* setting the order of items to sit when the screen shrinks */
-@media all and (min-width:300px){
-   
+/* @media all and (min-width:500px){ */
+/*    
     .about-me-container{
         flex: 3;
     }
@@ -275,9 +338,9 @@ section {
         order: 3;
     }
 
-   
+    */
 
-@media all and (min-width:100px){
-    .flex-container{
+/* @media all and (min-width:100px){ */
+    /* .flex-container{
         flex: 1;
-    }
+    } */

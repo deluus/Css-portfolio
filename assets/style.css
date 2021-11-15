@@ -1,24 +1,6 @@
-*{
-    padding:0;
-    box-sizing: border-box;
-}
-.deluus{
-    
-    background: black;
-
-}
-    
-/* everything under deluus in the html */
- .deluus > * {
-    display:flex;
-    flex-flow: row wrap;
-    text-align: center;
-    justify-content:space-between;
-    padding: 10px;
-    margin: 20px; 
-    flex: 1 100%;
-    border-radius: 10px;
-    }
+ *  {
+     box-sizing: border-box; 
+   }      
 
 /*  title page */
 .header {  
@@ -57,7 +39,7 @@
     justify-content: flex-end;
     color:pink;
     margin-top: 100px;
-    /* background-color:lightskyblue; */
+
     font-size: 30px;
     width: fit-content;
 
@@ -105,7 +87,7 @@ section {
     border-right-width: 5px; 
     padding-top: 50px;
     padding-bottom: 120px;
-    padding-right: 145px; 
+    padding-right: 105px; 
 }
 
 /*  H1 settings */
@@ -113,9 +95,9 @@ section {
     font-size: 30px;
     display: flex; 
     flex-grow: 1;
-    /* justify-content: right; */
     background-color: red; 
     border:solid;
+    padding-left: 50px
 
   
 }
@@ -136,11 +118,9 @@ section {
 .work-container {
     display:flex;
     flex-direction: row;
-    /* width: 100%; */
     background: rgb(114, 150, 150);
-    /* height: fit-content; */
-   
-    /* padding: 20px 20px; */
+    height: fit-content;
+    padding: 0px 20px;
  
 }
 .titles-background-2{
@@ -158,7 +138,7 @@ section {
     background-color:orangered;
     border:solid;
 }
-
+fo
 .work-items {
     margin: 0 auto;
     display: inline-block;
@@ -259,17 +239,7 @@ section {
     flex-grow: 4;
 }
 
-
-/* .footer-container {
-    background-color:wheat;
-      height: 80px;
-      flex-shrink: 0;
-      width: 99%;
-      padding-left: 128px;
-      
-     
-   } */
-   .contact-container{
+.contact-container {
       display: flex;
       background: rgb(114, 150, 150);
       justify-content: space-between;
@@ -278,7 +248,7 @@ section {
    
    }
   
-  .titles-background-3{
+.titles-background-3{
       display: flex;
       flex-grow: 1;
       /* font-size: 20px; */
@@ -289,17 +259,17 @@ section {
       padding-right: 128px;
       padding-bottom: 40px;
   }
-  .titles-container h3{
+.titles-container h3{
       font-size: 20px;
       background-color: red;
   }
   
-  .footer-container{
+.footer-container{
       text-align: center;
       flex-grow: 4;
   }
 
-  .info a {
+.info a {  
    color: black;
    display:flex;
    flex-grow: 4;
@@ -308,39 +278,4 @@ section {
    margin-right:3em;
    margin: 5% 5em 2% 0;
    text-decoration: underline;
-  }
-/* 
-@media screen and (max-width:768px) {
-    body,
-    .flex-container {
-     flex-direction: column;
-    } */
-
-
-  
-
-/* setting the order of items to sit when the screen shrinks */
-/* @media all and (min-width:500px){ */
-/*    
-    .about-me-container{
-        flex: 3;
-    }
- 
-    .about-me-container{
-        order: 1;
-    } 
-
-    .work-container {
-        order: 2;
-    }
-
-    .footer-container{
-        order: 3;
-    }
-
-    */
-
-/* @media all and (min-width:100px){ */
-    /* .flex-container{
-        flex: 1;
-    } */
+ }

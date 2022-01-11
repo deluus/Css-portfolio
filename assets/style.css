@@ -1,50 +1,49 @@
  *  {
-     box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
    }      
 
 /*  title page */
 .header {  
     display:flex;
     justify-content: space-between;
-    background:rgb(192, 228, 242); 
+    background:black;
     height: fit-content;
     padding:20px;
     margin-bottom: -10px;
     
 }
-
-.header-title{
-    font-size: 20px;
-    font-style: italic;
-    /* background-color: plum !important; */
-    padding: 2px;
-    
+.portfolio {
+    background-color: #BCC0C0;
+    margin: 4px 0;
+    padding: 5px 10px 5px 100px;
+    border-radius: 0 10px 10px 0;
 }
 
-
-.image {
-      background-image: url(../images/belau.kamikaze.jpg);
-      height: 400px;
-      padding: 200px;
-      margin:0px; 
-      background-repeat:no-repeat;
-      background-size: cover;
-      background-position: center;
-
+.portfolio h1 {
+    font-size: 45px;
+    color: #010101;
 }
-/*  use your illusion */
-.image p {
-    float: right;
+
+.links {
     display: flex;
-    justify-content: flex-end;
-    color:pink;
-    margin-top: 100px;
-
-    font-size: 30px;
-    width: fit-content;
-
+    flex-direction: row;
+    list-style: none;
+    padding: 10px;
 }
 
+.links a {
+    text-decoration: none;
+    color: #BCC0C0;
+    border-bottom: solid 3px #BCC0C0;
+    padding: 5px 12px;
+}
+
+.links a:hover {
+    color:black;
+    border-bottom: solid 3px #131313;
+}
 
 /* links / nav bar */
 nav ul {
@@ -57,6 +56,17 @@ nav ul {
 nav a {
     font-weight: bolder;
     text-decoration: underline;
+
+}
+
+.image {
+    background-image: url(../images/belau.kamikaze.jpg);
+    height: 400px;
+    padding: 200px;
+    margin:0px; 
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
 
 }
 
@@ -124,14 +134,25 @@ section {
  
 }
 .titles-background-2{
-    background-color:skyblue;
+    /* background-color:skyblue;
     flex-grow: 1;
-    border-right: solid;
+    border-right: solid; */
     border-right-width: 5px; 
     padding-bottom: 1120px;
     padding-right: 161px;
    
 } 
+.titles-background-3{
+    display: flex;
+    /* flex-grow: 1; */
+    /* font-size: 20px; */
+    /* background-color:skyblue; */
+    border-right: solid;
+    border-right-width: 5px;
+    padding-top: 20px;
+    /* padding-right: 128px; */
+    padding-bottom: 40px;
+}
 .titles-container h2{
     font-size: 30px;
 
@@ -160,25 +181,29 @@ fo
 
 .work-items div {
     margin: 20px 20px;
+    border-radius: solid 6px #131313;
+    display: flex;
+    
+}
+.work-items :hover{
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+
 }
 
 .work-item-1 {
     height: 300px;
     width: 500px;
     flex-grow: 4;
-    /* background-color: black; */
     background-image: url(../images/Belau.jpg);
     background-size: cover;
-    /* border: solid 5px; */
-
 }
+
 .picture-box{
     display: inline-flex;
-    /* border:dashed; */
     background-color: transparent;
-    
-   
 }
+
 .inside-box{
     color: white;
     font-size: 30px;
@@ -188,7 +213,6 @@ fo
     display: inline-flex;
     flex-grow: 4;
     color:black;
-    /* border: dashed; */
     background-color: transparent;
 }
 .inside-box-2{
@@ -201,7 +225,7 @@ fo
 .work-item-2 {
     height: 300px;
     width: 300px;
-    /* background-color: black; */
+   
     background-image: url(../images/I.jpg);
     background-size: cover;
     flex-grow: 4;
@@ -211,77 +235,42 @@ fo
 .work-item-3 {
     height: 300px;
     width: 300px;
-    /* background-color: black; */
+
     background-image: url(../images/daob2.jpg);
     background-size: cover;
     flex-grow: 4;
     
 }
 
-.work-item-4 {
-    height: 300px;
-    width: 300px;
-    /* background-color: black; */
-    background-image: url(../images/demul2.jpg);
-    background-size: cover;
-    background-position: center center;
-    flex-grow: 4;
+
+   /* contact start */
+.contact {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.contact li {
 
 }
 
-
-.work-item-5 {
-    height: 300px;
-    width: 300px;
-    /* background-color: black; */
-    background-image: url(../images/kedam2.jpg);
-    background-size: cover;
-    flex-grow: 4;
+.contact a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #131313;
 }
 
-.contact-container {
-      display: flex;
-      background: rgb(114, 150, 150);
-      justify-content: space-between;
-      text-align: center;
-      flex-direction: row;
-   
-   }
-  
-.titles-background-3{
-      display: flex;
-      flex-grow: 1;
-      /* font-size: 20px; */
-      background-color:skyblue;
-      border-right: solid;
-      border-right-width: 5px;
-      padding-top: 20px;
-      padding-right: 128px;
-      padding-bottom: 40px;
-  }
-.titles-container h3{
-      font-size: 20px;
-      background-color: red;
-  }
-  
-.footer-container{
-      text-align: center;
-      flex-grow: 4;
-  }
+.contact a:hover {
+    font-weight: bold;
+    border-bottom: 3px solid #131313
+}
 
-.info a {  
-   color: black;
-   display:flex;
-   flex-grow: 4;
-   /* justify-content: space-around; */
-   font-size: 20px;
-   margin-right:3em;
-   margin: 5% 5em 2% 0;
-   text-decoration: underline;
- }
+/*  me dia section */
+
 
  @media screen and (max-width: 992px) {
-    .card {
+    .work-container {
       width: 50%;
     }
     /* Change the header color */
@@ -292,7 +281,7 @@ fo
   
   /* Cards are stacked on top of each other at 768px or smaller */
   @media screen and (max-width: 768px) {
-    .card {
+    .work-container {
       width: 100%;
     }
     /* Change the header color */

@@ -9,7 +9,7 @@
     background:rgb(192, 228, 242); 
     height: fit-content;
     padding:20px;
-    margin-bottom: 0px;
+    margin-bottom: -10px;
     
 }
 
@@ -23,10 +23,10 @@
 
 
 .image {
-      background-image: url(../psychedelic.jpg);
+      background-image: url(../images/belau.kamikaze.jpg);
       height: 400px;
       padding: 200px;
-      margin:10px; 
+      margin:0px; 
       background-repeat:no-repeat;
       background-size: cover;
       background-position: center;
@@ -167,7 +167,7 @@ fo
     width: 500px;
     flex-grow: 4;
     /* background-color: black; */
-    background-image: url(../Belau.jpg);
+    background-image: url(../images/Belau.jpg);
     background-size: cover;
     /* border: solid 5px; */
 
@@ -202,7 +202,7 @@ fo
     height: 300px;
     width: 300px;
     /* background-color: black; */
-    background-image: url(../I.jpg);
+    background-image: url(../images/I.jpg);
     background-size: cover;
     flex-grow: 4;
 
@@ -212,7 +212,7 @@ fo
     height: 300px;
     width: 300px;
     /* background-color: black; */
-    background-image: url(../daob2.jpg);
+    background-image: url(../images/daob2.jpg);
     background-size: cover;
     flex-grow: 4;
     
@@ -222,7 +222,7 @@ fo
     height: 300px;
     width: 300px;
     /* background-color: black; */
-    background-image: url(../demul2.jpg);
+    background-image: url(../images/demul2.jpg);
     background-size: cover;
     background-position: center center;
     flex-grow: 4;
@@ -234,7 +234,7 @@ fo
     height: 300px;
     width: 300px;
     /* background-color: black; */
-    background-image: url(../kedam2.jpg);
+    background-image: url(../images/kedam2.jpg);
     background-size: cover;
     flex-grow: 4;
 }
@@ -279,3 +279,25 @@ fo
    margin: 5% 5em 2% 0;
    text-decoration: underline;
  }
+
+ @media screen and (max-width: 992px) {
+    .card {
+      width: 50%;
+    }
+    /* Change the header color */
+    header {
+      background: #772014;
+    }
+  }
+  
+  /* Cards are stacked on top of each other at 768px or smaller */
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 100%;
+    }
+    /* Change the header color */
+    header {
+      background: #8ac4ff;
+    }
+  }
+  

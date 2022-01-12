@@ -21,7 +21,13 @@ created CSS style sheet
 - corrected and added projects with links to working websites
 - created img file and moved all images to file
 - Linked resume 
--
+- added screenshot of page
 
  
-![]()
+![](../images/portfolioUpdate.png)
+
+GitHub link :
+
+
+
+Deployed Repo :

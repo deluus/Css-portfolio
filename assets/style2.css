@@ -8,6 +8,9 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: seashell;
+    display: flex;
+    flex-direction: column;
+
 }
 
 nav {
@@ -169,25 +172,24 @@ nav {
     font-weight: bold;
     border-bottom: 3px solid pink;
 }
-/* Cards are split into two columns at 992px or smaller */
-@media screen and (max-width: 992px) {
-    .nav .contact .work_img{
-      width: 50%;
+@media screen and (min-width: 768px) {
+    /* on tablets, set columns to only be 50% of the width and not grow */
+    .nav .contact .img .hero .links {
+      flex: 0 0 50%;
+      max-width: 50%;
     }
-    /* Change the header color */
-    /* header {
-      background: #772014;
-    } */
+  
+    /* select the last child to grow to full width if it has space to grow */
+    .sectionHead{
+      flex-grow: 1;
+    }
+  } 
+  
+  /* media query for larger screens */
+  @media screen and (min-width: 992px) {
+    .nav .contact .img .hero{
+      width: 75%;
+    }
   }
   
-  /* Cards are stacked on top of each other at 768px or smaller */
-  @media screen and (max-width: 768px) {
-    .nav .contact .work_img {
-      width: 100%;
-    }
-    /* Change the header color */
-    /* header {
-      background: #8ac4ff;
-    } */
-  }
   

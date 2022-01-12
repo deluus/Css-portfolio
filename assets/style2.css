@@ -8,8 +8,11 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: seashell;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    
+    
 
 }
 
@@ -78,17 +81,29 @@ nav {
     border-radius: 5%;
 }
 /* hero- background image */
+#heroheader {
+
+    flex-basis: 100%;
+}
 .hero {
     background-image: url("../images/thought.png");
     background-size:cover;
     height: 400px;
+    width: 100vw;
+    justify-self: center;
+    margin-left: 30px;
+    flex-basis: 100%;
     /* border-bottom: solid 2px #BCC0C0; */
 }
 
 
 /* main */
-.main {
+main {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 /* section head stuff */
 .sectionHead {
@@ -146,7 +161,7 @@ nav {
     filter: blur(4px);
 }
 
-.work-img_text {
+.work-img-text {
     opacity: 0;
 }
 
@@ -158,9 +173,9 @@ nav {
     flex-grow: 1;
 }
 
-.contact li {
-
-}
+.contactMe {
+    
+} 
 
 .contact a {
     text-decoration: none;
@@ -172,24 +187,25 @@ nav {
     font-weight: bold;
     border-bottom: 3px solid pink;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     /* on tablets, set columns to only be 50% of the width and not grow */
-    .nav .contact .img .hero .links {
-      flex: 0 0 50%;
-      max-width: 50%;
+   
+    .nav,
+    .work-img {
+      width: 50%;
     }
   
     /* select the last child to grow to full width if it has space to grow */
-    .sectionHead{
+    /* .sectionHead{
       flex-grow: 1;
     }
-  } 
+  }  */
   
   /* media query for larger screens */
-  @media screen and (min-width: 992px) {
-    .nav .contact .img .hero{
+  /* @media screen and (min-width: 992px) {
+    .nav .contact  .img .hero{
       width: 75%;
-    }
+    } */
   }
   
   

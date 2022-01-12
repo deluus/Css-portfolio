@@ -15,7 +15,13 @@ created CSS style sheet
  - inserted background pictures
  - created footer for contact info
 
+<!-- updates made -->
 
+- cleaned up code and formatted file structure on HTML and CSS pages.
+- corrected and added projects with links to working websites
+- created img file and moved all images to file
+- Linked resume 
+-
 
  
-![](2021-11-15-11-03-04.png)
+![]()

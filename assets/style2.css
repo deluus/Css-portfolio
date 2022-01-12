@@ -7,7 +7,7 @@
 /* navbar */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #BCC0C0;
+    background-color: seashell;
 }
 
 nav {
@@ -21,8 +21,9 @@ nav {
 
 }
 
+
 .portfolio {
-    background-color: #BCC0C0;
+    background-color:seashell;
     margin: 4px 0;
     padding: 5px 10px 5px 100px;
     border-radius: 0 10px 10px 0;
@@ -68,10 +69,10 @@ nav {
 }
 /* hero- background image */
 .hero {
-    background-image: url("../images/belau.kamikaze.jpg");
+    background-image: url("../images/boardwalk.jpg");
     background-size:cover;
     height: 400px;
-    border-bottom: solid 2px #BCC0C0;
+    /* border-bottom: solid 2px #BCC0C0; */
 }
 
 
@@ -87,8 +88,7 @@ nav {
 
 .sectionHead h2 {
     font-size: 35px;
-    border-right: solid 3px #010101;
-    padding-right: 15px;
+    padding-right: 65px;
 }
 
 .sectionHead p {
@@ -106,37 +106,37 @@ nav {
     margin-left: auto;
 }
 
-.work_main {
+.work-main {
     height: 400px;
     width: 1000px;
   
 }
-.work_main img{
+.work-main img{
     width: 100%
 }
 
-.work_lesser {
+.work-mini {
     display: flex;
     flex-wrap: wrap;
 }
 
-.work_lesser a {
+.work-mini a {
     height: 200px;
     width: 500px;
 }
 
-.work_img {
+.work-img {
     height: 100%;
     width: 100%;
 }
 
-.work_img:hover {
+.work-img:hover {
     border-radius: solid 6px #131313;
     -webkit-filter: blur(4px);
     filter: blur(4px);
 }
 
-.work_img_text {
+.work-img_text {
     opacity: 0;
 }
 
@@ -155,10 +155,32 @@ nav {
 .contact a {
     text-decoration: none;
     font-size: 22px;
-    color: #131313;
+    color: black;
 }
 
 .contact a:hover {
     font-weight: bold;
-    border-bottom: 3px solid #131313
+    border-bottom: 3px solid pink;
 }
+/* Cards are split into two columns at 992px or smaller */
+@media screen and (max-width: 992px) {
+    .nav .contact .work_img{
+      width: 50%;
+    }
+    /* Change the header color */
+    /* header {
+      background: #772014;
+    } */
+  }
+  
+  /* Cards are stacked on top of each other at 768px or smaller */
+  @media screen and (max-width: 768px) {
+    .nav .contact .work_img {
+      width: 100%;
+    }
+    /* Change the header color */
+    /* header {
+      background: #8ac4ff;
+    } */
+  }
+  

@@ -23,11 +23,15 @@ created CSS style sheet
 - created img file and moved all images to file
 - Linked resume 
 - added screenshot of page
+- added media queries to page
+- added profile picture/avatar
+- linked github and deployed page
 
  
 ![portfolioUpdate](https://user-images.githubusercontent.com/91577221/149072869-cfb83466-ee51-46ff-b2ac-a565e5ea6aa5.png)
 
 GitHub link :
+https://github.com/deluus/Css-portfolio
 
 
 Deployed Repo :

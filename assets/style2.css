@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -11,8 +12,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    
-    
 
 }
 
@@ -26,7 +25,6 @@ nav {
     width: 100%;
 
 }
-
 
 .portfolio {
     background-color:seashell;
@@ -91,8 +89,8 @@ nav {
     height: 400px;
     width: 100vw;
     justify-self: center;
-    margin-left: 30px;
-    flex-basis: 100%;
+    /* margin-left: 100px; */
+    /* flex-basis: 100%; */
     /* border-bottom: solid 2px #BCC0C0; */
 }
 
@@ -100,7 +98,7 @@ nav {
 /* main */
 main {
     text-align: center;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -127,8 +125,13 @@ main {
 }
 /* work */
 .work {
-    margin-right: auto;
-    margin-left: auto;
+    /* margin-right: auto;
+    margin-left: auto; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
 }
 
 .work-main {
@@ -187,13 +190,16 @@ main {
     font-weight: bold;
     border-bottom: 3px solid pink;
 }
-@media screen and (min-width: 1024px) {
+@media (max-width: 450px) {
+    /* main{
+        flex-direction: column;
+    } */
     /* on tablets, set columns to only be 50% of the width and not grow */
    
-    .nav,
+    /* .nav,
     .work-img {
-      width: 50%;
-    }
+      width: 100%;
+    } */
   
     /* select the last child to grow to full width if it has space to grow */
     /* .sectionHead{
@@ -202,10 +208,10 @@ main {
   }  */
   
   /* media query for larger screens */
-  /* @media screen and (min-width: 992px) {
+   /*@media screen and (min-width: 992px) {
     .nav .contact  .img .hero{
       width: 75%;
     } */
-  }
+  } 
   
   
